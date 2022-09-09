@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 namespace Model.entities
 {
     public class Municipio
-    {
+    {   
+        //Use of Entity Framework
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public string secretaria { get; set; }
+        /*
+        //OOP Native
         //Attributes
         private int id;
         private string nombre;
@@ -38,5 +44,6 @@ namespace Model.entities
         {
             return this.secretaria;
         }
+        */
     }
 }
