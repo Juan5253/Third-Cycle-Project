@@ -1,0 +1,32 @@
+
+Instalación Global del EF (desde Aplicacion)
+•	dotnet tool install --global dotnet-ef (obligatorio)
+•	dotnet tool update --global dotnet-ef (opcional)
+
+Instalación por cada Proyecto que utilizará el EF (Persistencia)
+•	dotnet add package Microsoft.EntityFrameworkCore --version 5.0.0 (obligatorio)
+•	dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.0 (obligatorio)
+•	dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.0 (obligatorio)
+•	dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 5.0.0 (obligatorio)
+
+Configuración Migraciones
+
+Cuando estoy en el proyecto donde esta el Main / Program
+	No hay migraciones
+		•	dotnet ef migrations add Init 
+	Ya hay migraciones
+		•	dotnet ef database update
+
+Cuando no estoy en el proyecto donde esta el Main / Program
+	No hay migraciones
+		•	dotnet ef database update  --startup-project ..\ConsoleApp\
+	Ya hay migraciones
+		•	dotnet ef migrations add Init --startup-project ..\ConsoleApp\
+
+
+
+Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0"
+
+instalar los dataAnotations
+
+ dotnet add package System.ComponentModel.Annotations --version 5.0.0
