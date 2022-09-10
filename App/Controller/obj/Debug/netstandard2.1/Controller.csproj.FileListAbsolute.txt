@@ -1,0 +1,12 @@
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\bin\Debug\netstandard2.1\Controller.deps.json
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\bin\Debug\netstandard2.1\Controller.dll
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\bin\Debug\netstandard2.1\Controller.pdb
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.csprojAssemblyReference.cache
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.AssemblyInfoInputs.cache
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.AssemblyInfo.cs
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.dll
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.pdb
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\bin\Debug\netstandard2.1\Model.dll
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\bin\Debug\netstandard2.1\Model.pdb
+C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\app\controller\obj\Debug\netstandard2.1\Controller.csproj.CopyComplete

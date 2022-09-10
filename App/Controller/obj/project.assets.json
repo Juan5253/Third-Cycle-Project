@@ -2068,6 +2068,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
       }
     }
   },
@@ -7236,6 +7246,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7243,7 +7258,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
+      "Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7252,11 +7268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\App\\Controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\App\\Controller\\Controller.csproj",
+      "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\Controller.csproj",
       "packagesPath": "C:\\Users\\Juan_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\App\\Controller\\obj\\",
+      "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juan_\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7269,7 +7285,11 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Model\\Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
