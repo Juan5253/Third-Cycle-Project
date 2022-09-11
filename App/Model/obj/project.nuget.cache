@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GXocYmrZtpiVBxi7qglh+5bmdVjVq2opXSR2urfgXiWIl1eUc+dbaAegloj45PthPqTVzrCUp94YGgMJm8Dt2w==",
+  "dgSpecHash": "T7C2Q/RrG5i8BfUUdBx5Ds7y005X6+oNgOm7GzXuYuOVuaMtD4OwAaA0lf7SVN4CllvMtckIzA5VJPEKclfnIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan_\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Juan_\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Juan_\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Juan_\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

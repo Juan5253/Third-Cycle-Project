@@ -2072,6 +2072,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -7268,11 +7271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\Controller.csproj",
+      "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Controller\\Controller.csproj",
       "packagesPath": "C:\\Users\\Juan_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\controller\\obj\\",
+      "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\Third-Cycle-Project\\app\\Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juan_\\AppData\\Roaming\\NuGet\\NuGet.Config"
