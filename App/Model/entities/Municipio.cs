@@ -19,6 +19,7 @@ namespace Model.entities
         [MaxLength(40,ErrorMessage="El campo {0} no puede tener más de {1} caracteres")]
         [MinLength(10,ErrorMessage="El campo {0} no puede tener menos de {1} caracteres")]
         public string secretaria { get; set; }
+        public List<Torneo> torneos { get; set; }
         /*
         //OOP Native
         //Attributes

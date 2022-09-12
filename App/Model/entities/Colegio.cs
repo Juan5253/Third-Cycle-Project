@@ -13,5 +13,6 @@ namespace Model.entities
         public string telefono { get; set; }
         public string ciudad { get; set; }
         public string direccion { get; set; }
+        public List<Juez> jueces { get; set; }
     }
 }
