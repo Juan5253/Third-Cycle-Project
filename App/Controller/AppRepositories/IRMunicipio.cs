@@ -12,7 +12,7 @@ namespace Controller.AppRepositories
         public bool crearMunicipio(Municipio municipio);
         public Municipio buscarMunicipio(int id);
         public bool eliminarMunicipio(int id);
-        public bool actualizarMunicipio(int id);
+        public bool actualizarMunicipio(Municipio municipio);
         public IEnumerable<Municipio> listarMunicipios();
         public List<Municipio> listarMunicipios1();
     }

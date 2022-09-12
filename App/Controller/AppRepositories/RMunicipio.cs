@@ -6,35 +6,75 @@ using Model.entities;
 
 namespace Controller.AppRepositories
 {
-    public class RMunicipio: IRMunicipio //The RMunicipio class is in charge of providing functionality (implementation), to the methods signed in the interface IRMunicipio
+    public class RMunicipio : IRMunicipio //The RMunicipio class is in charge of providing functionality (implementation), to the methods signed in the interface IRMunicipio
     {
         //Attribute
-        private readonly MyAppContext _appContext;
+        private readonly MyAppContext _appContext; //The brigde between RMunicipio and MyAppContext
         //Methods
         //Transactions are executed in the database with the execution of each methods   
         public RMunicipio(MyAppContext RappContext) //the constructor is instantiated by receiving a context
         {
-            this._appContext=RappContext;
+            this._appContext=RappContext; //Done 
         }
+        ///CRUD OPERATIONS 
         public bool crearMunicipio(Municipio municipio) //the method crearMunicipio() receives an attribute calls municipio with type of data object Municipio
         {
-            bool create = false; //invalid
-            return create;
+            bool create = false; // Control Varible 
+            try //Exception Handling 
+            {
+                this._appContext.Municipios.Add(municipio);
+                this._appContext.SaveChanges();
+                create = true;
+            }
+            catch (System.Exception)
+            {
+                create = false;
+            } 
+            return create; // Done 
         }
         public Municipio buscarMunicipio(int id)
         {
-            Municipio municipio =null; //invalid
-            return municipio;   
+            Municipio municipio = this._appContext.Municipios.Find(id); 
+            return municipio;   // Done
         }
         public bool eliminarMunicipio(int id)
         {
-            bool delete = false; //invalid
-            return delete;
+            bool delete = false;
+            var mun = this._appContext.Municipios.Find(id);
+            if(mun != null)
+            {
+                try
+                {
+                    this._appContext.Municipios.Remove(mun);
+                    this._appContext.SaveChanges();
+                    delete = true;
+                }
+                catch (System.Exception)
+                {
+                    delete = false;
+                } 
+            }
+            return delete; //Done 
         }
-        public bool actualizarMunicipio(int id)
+        public bool actualizarMunicipio(Municipio municipio)
         {
-            bool update = false;  //invalid
-            return update;
+            bool update = false;
+            var mun = this._appContext.Municipios.Find(municipio.id);
+            if(mun != null)
+            {
+                try
+                {
+                    //Attributes of Municipio Object
+                    mun.nombre = municipio.nombre;
+                    mun.secretaria = municipio.secretaria;
+                    this._appContext.SaveChanges();
+                }
+                catch (System.Exception)
+                {
+                    update = false;
+                }
+            }
+            return update; //Done
         }
         public IEnumerable<Municipio> listarMunicipios() //IEnumerable is like a List 
         {
