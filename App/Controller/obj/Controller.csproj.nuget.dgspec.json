@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Controller\\Controller.csproj": {}
+    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Controller\\Controller.csproj": {
+    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Controller\\Controller.csproj",
+        "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Controller\\Controller.csproj",
+        "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
         "packagesPath": "C:\\Users\\Juan_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Controller\\obj\\",
+        "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan_\\AppData\\Roaming\\NuGet\\NuGet.Config"
