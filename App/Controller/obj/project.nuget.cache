@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "olZZVYUouoiCLOaJfxmHpzeAEM+EdiqtLTModQNkpNc5pMAvIc7amRIXbVIhf8UUKxb9FFWtdZMzw/j/RjIhxg==",
+  "dgSpecHash": "6ASMPU1t7Wow1UHzBlBDHvfljOwLTWNRyLlTfPvu4jpmXnSOBsRf0aY4CzoJw0exZyAI6DD3U+XQHdDt94/MYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\controller\\Controller.csproj",
+  "projectFilePath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juan_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Juan_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

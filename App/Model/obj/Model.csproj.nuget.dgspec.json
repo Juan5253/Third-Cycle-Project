@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\model\\Model.csproj": {}
+    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\model\\Model.csproj": {
+    "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\model\\Model.csproj",
+        "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\model\\Model.csproj",
         "packagesPath": "C:\\Users\\Juan_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\App\\model\\obj\\",
+        "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Juan_\\AppData\\Roaming\\NuGet\\NuGet.Config"

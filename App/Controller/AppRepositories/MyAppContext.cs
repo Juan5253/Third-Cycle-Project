@@ -7,11 +7,13 @@ using Model.entities;
 
 namespace Controller.AppRepositories
 {
-    public class AppContext : DbContext //To use other methods and create the database. appContext inherits from the DbContext superclass
+    public class MyAppContext : DbContext //To use other methods and create the database. appContext inherits from the DbContext superclass
     {
         public DbSet<Municipio> Municipios {get;set;}
         public DbSet<Colegio> Colegios {get;set;}
         public DbSet<Patrocinador> Patrocinadores {get;set;}
+        public DbSet<Torneo> Torneos {get;set;}
+        public DbSet<Juez> Jueces {get;set;}
         //Method
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
