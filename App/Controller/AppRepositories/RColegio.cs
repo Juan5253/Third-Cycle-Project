@@ -66,6 +66,7 @@ namespace Controller.AppRepositories
                     col.ciudad = colegio.ciudad;
                     col.direccion = colegio.direccion;
                     this._appContext.SaveChanges();
+                    update = true;
                 }
                 catch (System.Exception)
                 {

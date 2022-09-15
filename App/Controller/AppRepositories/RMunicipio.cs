@@ -68,6 +68,7 @@ namespace Controller.AppRepositories
                     mun.nombre = municipio.nombre;
                     mun.secretaria = municipio.secretaria;
                     this._appContext.SaveChanges();
+                    update = true;
                 }
                 catch (System.Exception)
                 {
