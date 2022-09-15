@@ -52,6 +52,139 @@ namespace Controller.Migrations
                     b.ToTable("Colegios");
                 });
 
+            modelBuilder.Entity("Model.entities.Deportista", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("Equipoid")
+                        .HasColumnType("int");
+
+                    b.Property<string>("apellidos")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("celular")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("correo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("documento")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("eps")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("equipoId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("fechaNacimiento")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nombres")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("residencia")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("rh")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("Equipoid");
+
+                    b.ToTable("Deportistas");
+                });
+
+            modelBuilder.Entity("Model.entities.Entrenador", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("apellidos")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("celular")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("correo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("documento")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<int>("equipoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("genero")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nacionalidad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nombres")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("equipoId")
+                        .IsUnique();
+
+                    b.ToTable("Entrenadores");
+                });
+
+            modelBuilder.Entity("Model.entities.Equipo", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("categoria")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("ciudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("disciplina")
+                        .IsRequired()
+                        .HasMaxLength(35)
+                        .HasColumnType("nvarchar(35)");
+
+                    b.Property<string>("nombre")
+                        .IsRequired()
+                        .HasMaxLength(35)
+                        .HasColumnType("nvarchar(35)");
+
+                    b.Property<int>("patrocinadorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("patrocinadorId");
+
+                    b.ToTable("Equipos");
+                });
+
             modelBuilder.Entity("Model.entities.Juez", b =>
                 {
                     b.Property<int>("id")
@@ -129,10 +262,10 @@ namespace Controller.Migrations
                     b.Property<string>("correo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("nombre")
+                    b.Property<string>("documento")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("patrocinador")
+                    b.Property<string>("nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("telefono")
@@ -184,6 +317,53 @@ namespace Controller.Migrations
                     b.ToTable("Torneos");
                 });
 
+            modelBuilder.Entity("Model.entities.TorneoEquipo", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("equipoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("torneoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("equipoId");
+
+                    b.HasIndex("torneoId");
+
+                    b.ToTable("TorneosEquipos");
+                });
+
+            modelBuilder.Entity("Model.entities.Deportista", b =>
+                {
+                    b.HasOne("Model.entities.Equipo", null)
+                        .WithMany("deportista")
+                        .HasForeignKey("Equipoid");
+                });
+
+            modelBuilder.Entity("Model.entities.Entrenador", b =>
+                {
+                    b.HasOne("Model.entities.Equipo", null)
+                        .WithOne("entrenador")
+                        .HasForeignKey("Model.entities.Entrenador", "equipoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Model.entities.Equipo", b =>
+                {
+                    b.HasOne("Model.entities.Patrocinador", null)
+                        .WithMany("equipos")
+                        .HasForeignKey("patrocinadorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Model.entities.Juez", b =>
                 {
                     b.HasOne("Model.entities.Colegio", null)
@@ -208,9 +388,37 @@ namespace Controller.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Model.entities.TorneoEquipo", b =>
+                {
+                    b.HasOne("Model.entities.Equipo", "equipo")
+                        .WithMany("torneoEquipo")
+                        .HasForeignKey("equipoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Model.entities.Torneo", "torneo")
+                        .WithMany("TorneoEquipo")
+                        .HasForeignKey("torneoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("equipo");
+
+                    b.Navigation("torneo");
+                });
+
             modelBuilder.Entity("Model.entities.Colegio", b =>
                 {
                     b.Navigation("jueces");
+                });
+
+            modelBuilder.Entity("Model.entities.Equipo", b =>
+                {
+                    b.Navigation("deportista");
+
+                    b.Navigation("entrenador");
+
+                    b.Navigation("torneoEquipo");
                 });
 
             modelBuilder.Entity("Model.entities.Municipio", b =>
@@ -218,9 +426,16 @@ namespace Controller.Migrations
                     b.Navigation("torneos");
                 });
 
+            modelBuilder.Entity("Model.entities.Patrocinador", b =>
+                {
+                    b.Navigation("equipos");
+                });
+
             modelBuilder.Entity("Model.entities.Torneo", b =>
                 {
                     b.Navigation("jueces");
+
+                    b.Navigation("TorneoEquipo");
                 });
 #pragma warning restore 612, 618
         }

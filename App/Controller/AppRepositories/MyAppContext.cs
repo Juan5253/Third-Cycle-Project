@@ -14,6 +14,10 @@ namespace Controller.AppRepositories
         public DbSet<Patrocinador> Patrocinadores {get;set;}
         public DbSet<Torneo> Torneos {get;set;}
         public DbSet<Juez> Jueces {get;set;}
+        public DbSet<Deportista> Deportistas {get;set;}
+        public DbSet<Equipo> Equipos {get;set;}
+        public DbSet<Entrenador> Entrenadores {get;set;}
+        public DbSet<TorneoEquipo> TorneosEquipos {get;set;}
         //Method
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -29,6 +29,7 @@ namespace Model.entities
         [DataType(DataType.Date)]
         public DateTime fechaFinal { get; set; }
         public int municipioId { get; set; }
+        public List<TorneoEquipo> TorneoEquipo { get; set; }
         public List<Juez> jueces { get; set; }
     }
 }
