@@ -31,7 +31,7 @@ namespace Model.entities
         public string celular { get; set; }
         public string correo { get; set; }
         public string residencia { get; set; }
-        public string equipoId { get; set; }
+        public int equipoID { get; set; }
 
     }
 }
