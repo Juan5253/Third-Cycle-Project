@@ -17,7 +17,7 @@ namespace Controller.AppRepositories
             this._appContext=RappContext; //Done 
         }
         ///CRUD OPERATIONS 
-        public bool crearMunicipio(Municipio municipio) //the method crearMunicipio() receives an attribute calls municipio with type of data object Municipio
+        public bool createMunicipio(Municipio municipio) //the method crearMunicipio() receives an attribute calls municipio with type of data object Municipio
         {
             bool create = false; // Control Varible 
             try //Exception Handling 
@@ -32,12 +32,12 @@ namespace Controller.AppRepositories
             } 
             return create; // Done 
         }
-        public Municipio buscarMunicipio(int id)
+        public Municipio searchMunicipio(int id)
         {
             Municipio municipio = this._appContext.Municipios.Find(id); 
             return municipio;   // Done
         }
-        public bool eliminarMunicipio(int id)
+        public bool deleteMunicipio(int id)
         {
             bool delete = false;
             var mun = this._appContext.Municipios.Find(id);
@@ -56,7 +56,7 @@ namespace Controller.AppRepositories
             }
             return delete; //Done 
         }
-        public bool actualizarMunicipio(Municipio municipio)
+        public bool updateMunicipio(Municipio municipio)
         {
             bool update = false;
             var mun = this._appContext.Municipios.Find(municipio.id);
@@ -77,11 +77,11 @@ namespace Controller.AppRepositories
             }
             return update; //Done
         }
-        public IEnumerable<Municipio> listarMunicipios() //IEnumerable is like a List 
+        public IEnumerable<Municipio> listMunicipios() //IEnumerable is like a List 
         {
             return _appContext.Municipios; //Done
         }
-        public List<Municipio> listarMunicipios1()
+        public List<Municipio> listMunicipios1()
         {
             return _appContext.Municipios.ToList(); //Done
         }

@@ -7271,11 +7271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
+      "projectUniqueName": "C:\\Users\\Juan_\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
       "projectName": "Controller",
-      "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
+      "projectPath": "C:\\Users\\Juan_\\Desktop\\third-cycle-project\\app\\controller\\Controller.csproj",
       "packagesPath": "C:\\Users\\Juan_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\controller\\obj\\",
+      "outputPath": "C:\\Users\\Juan_\\Desktop\\third-cycle-project\\app\\controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juan_\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7289,8 +7289,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Juan_\\OneDrive\\Desktop\\third-cycle-project\\app\\Model\\Model.csproj"
+            "C:\\Users\\Juan_\\Desktop\\third-cycle-project\\app\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Juan_\\Desktop\\third-cycle-project\\app\\Model\\Model.csproj"
             }
           }
         }

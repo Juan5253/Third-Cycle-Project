@@ -9,11 +9,11 @@ namespace Controller.AppRepositories
     public interface IRMunicipio //declaration of signed methods, the implementation is done in RMunicipios
     {
         //the argument is packed, it receives all the attributes encapsulated in an object of type Municipio called municipio
-        public bool crearMunicipio(Municipio municipio);
-        public Municipio buscarMunicipio(int id);
-        public bool eliminarMunicipio(int id);
-        public bool actualizarMunicipio(Municipio municipio);
-        public IEnumerable<Municipio> listarMunicipios();
-        public List<Municipio> listarMunicipios1();
+        public bool createMunicipio(Municipio municipio);
+        public Municipio searchMunicipio(int id);
+        public bool deleteMunicipio(int id);
+        public bool updateMunicipio(Municipio municipio);
+        public IEnumerable<Municipio> listMunicipios();
+        public List<Municipio> listMunicipios1();
     }
 }

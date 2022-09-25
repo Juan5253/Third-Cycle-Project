@@ -31,5 +31,6 @@ namespace Model.entities
         public int municipioId { get; set; }
         public List<TorneoEquipo> TorneoEquipo { get; set; }
         public List<Juez> jueces { get; set; }
+        public List<Instalacion> instalaciones { get; set; }
     }
 }

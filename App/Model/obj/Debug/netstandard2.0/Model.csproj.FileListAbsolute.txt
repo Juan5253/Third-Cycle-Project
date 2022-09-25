@@ -7,3 +7,12 @@ C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\App\Model\obj\Debug\netstand
 C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\App\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
 C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\App\Model\obj\Debug\netstandard2.0\Model.dll
 C:\Users\Juan_\OneDrive\Desktop\Third-Cycle-Project\App\Model\obj\Debug\netstandard2.0\Model.pdb
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\bin\Debug\netstandard2.0\Model.deps.json
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\bin\Debug\netstandard2.0\Model.dll
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.csprojAssemblyReference.cache
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.dll
+C:\Users\Juan_\Desktop\third-cycle-project\app\Model\obj\Debug\netstandard2.0\Model.pdb

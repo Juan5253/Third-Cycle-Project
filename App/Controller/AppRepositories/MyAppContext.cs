@@ -18,6 +18,8 @@ namespace Controller.AppRepositories
         public DbSet<Equipo> Equipos {get;set;}
         public DbSet<Entrenador> Entrenadores {get;set;}
         public DbSet<TorneoEquipo> TorneosEquipos {get;set;}
+        public DbSet<Instalacion> Instalaciones {get;set;}
+        public DbSet<Escenario> Escenarios {get;set;}
         //Method
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
