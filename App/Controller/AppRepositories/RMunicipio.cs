@@ -17,20 +17,28 @@ namespace Controller.AppRepositories
             this._appContext=RappContext; //Done 
         }
         ///CRUD OPERATIONS 
-        public bool createMunicipio(Municipio municipio) //the method crearMunicipio() receives an attribute calls municipio with type of data object Municipio
+        public string createMunicipio(Municipio municipio) //the method crearMunicipio() receives an attribute calls municipio with type of data object Municipio
         {
-            bool create = false; // Control Varible 
-            try //Exception Handling 
+            //bool create = false; // Control Varible 
+            string outmsg = "";
+            var exts = exists(municipio);
+            if (!exts)
             {
-                this._appContext.Municipios.Add(municipio);
-                this._appContext.SaveChanges();
-                create = true;
+                 try //Exception Handling
+                {
+                    this._appContext.Municipios.Add(municipio);
+                    this._appContext.SaveChanges();
+                    // create = true;
+                    outmsg = "El Municipio ha sido creado con exito!";
+                }
+                catch (System.Exception)
+                {
+                    outmsg = "Fallo la creación del Municipio";
+                }
+                return outmsg; 
             }
-            catch (System.Exception)
-            {
-                create = false;
-            } 
-            return create; // Done 
+            outmsg = "El Municipio con nombre " + municipio.nombre + " ya existe! "; // Done 
+            return outmsg;
         }
         public Municipio searchMunicipio(int id)
         {
@@ -84,6 +92,16 @@ namespace Controller.AppRepositories
         public List<Municipio> listMunicipios1()
         {
             return _appContext.Municipios.ToList(); //Done
+        }
+        private bool exists(Municipio municipio)
+        {
+            bool exists = false; 
+            var mun  = _appContext.Municipios.FirstOrDefault( m => m.nombre == municipio.nombre);
+            if (mun != null)
+            {
+                exists = true;
+            }
+            return exists;
         }
     }
 }
